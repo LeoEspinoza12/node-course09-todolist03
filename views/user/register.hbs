@@ -1,0 +1,26 @@
+<div class="main">
+  <div class="container register">
+    <div class="row">
+      <div class="col-md-offset-3 col-md-6 register-header">
+        <h3>{{text}}</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-offset-4 col-md-4  register-form">
+        <h2>Create Account</h2>
+        <form action="/register" method="POST">
+          <div class="form-group">
+            <p class="text-danger text-fix">{{nameAlert}}</p>
+            <input type="text" autofocus class="form-control" placeholder="Enter username" name="username" value="{{username}}" required="true">
+          </div>
+          <div class="form-group">
+            <p class="text-danger text-fix">{{pwdAlert}}</p>
+            <input type="password" class="form-control" placeholder="Enter password" name="password" value="{{password}}" required="true">
+          </div>
+          <a href="/" class="btn btn-warning">Login</a>
+          <button type="submit" class="btn btn-primary pull-right">Register</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

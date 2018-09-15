@@ -1,0 +1,28 @@
+<script src="/javascripts/bootstrap.js"></script>
+<script>
+
+sampleThis = function(){
+  var password = "123456"; 
+    var check = prompt('Would you like to change the status')
+
+      if (check.toLowerCase() == 'yes' || check.toLowerCase() == 'y') {
+        var askpwd = prompt('Please enter password')
+          if(askpwd === password) {
+            return true
+          } else {
+            alert('Invalid password')
+              return false
+          }
+      } else {
+        alert('Please answer Yes or No.')
+          return false
+      }
+
+  }
+
+
+
+</script>
+</body>
+
+</html>

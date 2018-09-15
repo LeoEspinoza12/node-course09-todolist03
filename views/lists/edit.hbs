@@ -1,0 +1,69 @@
+<div class="container parts done-list">
+  <ul class="list-group done-list-group">
+    <h4 class="list-header">Accomplished</h4>
+
+         {{#each done}}
+        <li href="#" class="list-group-item waves-effect {{status}}">
+          <div class="done-list-p">
+            <p>{{todolist}}</p>
+          </div>
+          <div class="done-list-input">
+            <p class="finished-time">{{generateTime updatedAt 'LT'}}</p>
+            <form action="/lists/change/{{_id}}" onsubmit="sampleThis()" method="POST">
+              <button class="btn btn-primary btn-xs pull-right" type="submit">Change</button>
+            </form>
+          </div>
+        </li>
+        {{/each}}
+
+    </ul>
+  </div>
+</div>
+
+<div class="col-md-6">
+  <div class="container all-list ">
+    <ul class="list-group">
+      <h4 class="list-header">To do list</h4>
+
+        {{#each edit}}
+          <li class="list-group-item list-group-item-success actv-list1 list-edit">
+            <div class="actv-list-edit">
+              <form action="/lists/edit" method="post">
+                <div class="form-group">
+                  <input type="hidden" value="{{_id}}" name="_id">
+                  <textarea type="text" class="list-text" autofocus="autofocus" name="todolist">{{todolist}}</textarea>
+                  <div class="edit-form">
+                    <select class="form-control" id="sel2" name="status">
+                      
+                        <option value="pending">Pending</option>
+                        <option value="urgent">Urgent</option>
+                        <option value="done">Done</option>
+                      
+                    </select>
+                  <input class="btn btn-primary btn-sm pull-right" type="submit" value="Update">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </li>
+        {{/each}}
+
+        {{#each lists}}
+          <li class="list-group-item list-group-item-success actv-list1 {{status}}">
+            <div class="actv-list">
+              <p class="list-text">{{todolist}}</p>
+              <div class="actv-side">
+                <p class="list-time">{{generateTime updatedAt 'LT'}}</p>
+                <a href="/edit{{_id}}" class="btn btn-primary btn-xs" type="button">Edit</a>
+                <form action="/lists/{{_id}}" method="post">
+                  <button type="submit" class="btn btn-danger btn-xs pull-right">Delete</button>
+                </form>
+              </div>
+            </div>
+          </li>
+        {{/each}}
+
+    </ul>
+  </div>
+</div>
+</div>

@@ -1,0 +1,293 @@
+.main {
+  width: 100%;
+  height: 100vh;
+  background: rgb(215, 215, 215)
+}
+
+.register-header {
+  margin-top: 32vh;
+  /* background: papayawhip; */
+  /* height: 20px  */
+}
+
+.register-header h3 {
+  /* background: peru; */
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  font-family: play;
+  font-weight: bold;
+  font-size: 70px;
+  text-shadow: 3px 3px 2px #f0b596
+}
+
+.register-form {
+  /* background: gray; */
+  font-family: basic;
+  border: 2px solid rgb(160, 160, 160);
+  border-radius: 8px;
+  padding-top: 8px;
+  padding-bottom: 30px;
+  box-shadow: 12px 12px 3px gray
+}
+
+.register-form input {
+  height: 40px;
+  font-size: 16px;
+  box-shadow: 4px 4px 3px gray
+}
+
+.register-form h2 {
+  /* background: palevioletred; */
+  width: 100%;
+  text-align: center;
+  font-size: 23px
+}
+
+.register-form p {
+  /* background: palevioletred; */
+  margin: 0;
+  text-align: center
+    /* width: 100%;
+  text-align: center;
+  font-size: 23px */
+}
+
+.register-form a,
+button {
+  margin-top: 15px;
+  width: 90px;
+  font-size: 14px;
+  box-shadow: 4px 4px 3px gray
+}
+
+.text-fix {
+  color: #ff0b0b;
+  line-height: 18px;
+  height: 18px;
+}
+
+/* list parts */
+.parts,
+.all-list {
+  width: 100%;
+}
+
+.forms-list {
+  border-bottom: 1px solid gray;
+  height: 140px;
+  background: #e1e0c0;
+  box-shadow: 10px 10px gray;
+}
+
+.list-parts {}
+
+.done-list {
+  background: #d7e5d2;
+  height: 560px;
+  box-shadow: 10px 10px gray;
+}
+
+.all-list {
+  background: rgb(201, 192, 187);
+  height: 700px;
+  overflow: auto;
+  box-shadow: 10px 10px gray;
+}
+
+/* form-list styles */
+/* ////////////////////////////////////////////// */
+.forms-list .container {
+  width: inherit;
+  font-family: play;
+}
+
+.forms-list textarea {
+  box-shadow: 2px 2px gray;
+}
+
+.list-input {
+  margin: 15px 0 0 0;
+}
+
+.bottom {
+  /* background: gray; */
+}
+
+.bottom-checkedbox {
+  /* background: #f0b596; */
+  width: 70%;
+  /* display: inline-block; */
+  float: left;
+}
+
+.bottom-checkedbox div {
+  display: inline;
+  margin-left: 15px;
+}
+
+.bottom-btn {
+  width: 30%;
+  /* background: teal; */
+  display: inline-block;
+  /* float: right; */
+  padding: 0;
+}
+
+.bottom-btn button {
+  margin: 0 15px;
+  box-shadow: 2px 2px rgb(70, 70, 70)
+}
+
+/* done-list styles */
+/* ////////////////////////////////////////////// */
+.done-list-group {
+  margin-top: 15px;
+  font-family: play;
+}
+
+.list-header {
+  text-align: center;
+  color: #a01e00;
+  font-weight: 600;
+  /* background: #f0b596; */
+  margin: 0
+}
+
+.done-list-group li {
+  margin-bottom: 4px;
+  background: #9fb397;
+  box-shadow: 2px 2px gray;
+}
+
+.done-list-p {
+  width: 87%;
+  color: rgb(20, 20, 20);
+  display: inline-block;
+}
+
+.done-list-input {
+  width: 12%;
+  float: right;
+}
+
+.finished-time {
+  /* background: #f0b596; */
+  font-size: 10px;
+  margin: 0;
+  text-align: center
+}
+
+.done-list-input button {
+  width: 100%;
+  margin-top: 0;
+  box-shadow: 2px 2px 2px gray
+
+}
+
+/* main list styles */
+/* ////////////////////////////////////////////// */
+.all-list {
+  padding-top: 10px;
+  font-family: play;
+}
+
+.actv-list1 {
+  height: 72px;
+  margin-top: 5px;
+  box-shadow: 2px 2px gray;
+  /* background: #ffacac; */
+}
+
+.pending{
+  background: #dff0d8;
+}
+
+.urgent {
+  background: #ffacac;
+}
+
+
+.list-text {
+  padding: 2px 2px 2px 5px;
+  margin: 0;
+  width: 80%;
+  float: left;
+  height: 50px;
+  color: #4f4c4b;
+  font-weight: 600
+}
+
+.actv-side {
+  margin: 0;
+  width: 20%;
+  float: right;
+}
+
+.actv-side p {
+  width: 100%;
+  text-align: center;
+  font-family: play;
+  font-size: 13px;
+}
+
+.list-time {
+  color: rgb(50, 50, 50);
+  font-style: italic;
+  text-align: center
+}
+
+.actv-side a,
+.actv-side button {
+  width: 45px;
+  margin-top: -12px;
+  box-shadow: 2px 2px 2px gray
+}
+
+/* .actv-side input, .actv-side button {
+  margin-top: -5px;
+  
+} */
+
+
+.actv-side button {
+  margin-top: -25px;
+  box-shadow: none;
+  box-shadow: 2px 2px 2px gray
+}
+
+
+/* edit form styles */
+/* ////////////////////////////////////////////// */
+.list-edit {
+  background: rgb(160, 160, 160);
+  height: 120px;
+}
+
+.actv-list-edit textarea {
+  width: 100%;
+}
+
+.edit-form {
+  /* background: pink */
+}
+
+.edit-form select {
+  padding: 0 0 0 5px;
+  height: 28px;
+  width: 120px;
+  display: inline-block;
+  margin: 5px 0 0 10px;
+}
+
+.edit-form input {
+  margin: 5px 10px 0 0;
+  font-size: 13px;
+  padding: 3px 7px;
+  font-family: play;
+  box-shadow: 2px 2px 2px gray
+}
